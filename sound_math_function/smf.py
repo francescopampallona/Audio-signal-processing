@@ -36,7 +36,7 @@ plt.xlabel('TEMPO IN SECONDI')
 ax.grid()
 plt.show()
 '''
-SALVATAGGIO DEL SEGNALE IN WAV
+SALVATAGGIO DEL SEGNALE IN WAV E RIPRODUZIONE DEL SUONO TRAMITE LA LIBRERIA sounddevice
 '''
 print("NUMERO DI CAMPIONI: ",DURATA*SF)
 write('test.wav', int(SF), function)
