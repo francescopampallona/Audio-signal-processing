@@ -3,12 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.io.wavfile import write
 import sounddevice as sd
-'''
-SEGNALE
-'''
-def signal(w, t):
-    signal = np.sin(w*t)*np.sin((w/500)*t)
-    return signal
     
 '''
 DATI SULLA DURATA DEL SEGNALE E SUL SUO CAMPIONAMENTO 
@@ -17,12 +11,12 @@ DURATA = 4.0 #Durata del suono in secondi
 SF = 10000.0 #FREQUENZA DI CAMPIONAMENTO
 
 '''
-DATI DEL SEGNALE
+DATI DEL SEGNALE (w=pulsazione)
 '''
-f = 500 #Frequenza del segnale
-w = 2*math.pi*f #Pulsazione del segnale
+w1 = 2*math.pi*500
+w2 = 2*math.pi*4
 t = np.arange(0, DURATA, 1/SF)
-function = signal(w, t)
+function = np.sin(w1*t)*np.sin(w2*t)
    
 
 '''
