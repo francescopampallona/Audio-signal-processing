@@ -34,6 +34,6 @@ plt.show()
 '''
 PLAY AUDIO
 '''
-sd.play(sound, fs)
+sd.play(sound, sf)
 
 
