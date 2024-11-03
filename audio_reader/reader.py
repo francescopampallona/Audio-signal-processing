@@ -6,7 +6,9 @@ import matplotlib.pyplot as plt
 '''
 READ AUDIO FROM WAV FILE 
 '''
-data=read("doorbell_x.wav")
+print("Inserire il titolo del file wav. Es. title.wav")
+title=input()
+data=read(title)
 '''
 SAMPLE FREQUENCY
 '''
